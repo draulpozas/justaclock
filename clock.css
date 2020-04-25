@@ -1,0 +1,48 @@
+#clock {
+  margin: auto;
+  height: 50vh;
+  width: 50vh;
+  border: 1vh solid cornflowerblue;
+  border-radius: 50%;
+  background-image: url('clockface.png');
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#hs {
+  height: 20%;
+  width: .5vh;
+  background-color: black;
+  position: relative;
+  top: 30%;
+  left: calc(50% - .5vh);
+  z-index: 1;
+  transform-origin: bottom;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+#mins {
+  height: 40%;
+  width: .5vh;
+  background-color: black;
+  position: relative;
+  top: -10%;
+  left: calc(50% - .5vh);
+  z-index: 2;
+  transform-origin: bottom;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+#secs {
+  height: 45%;
+  width: .2vh;
+  background-color: red;
+  position: relative;
+  top: -55%;
+  left: calc(50% - .5vh);
+  z-index: 0;
+  transform-origin: bottom;
+}
